@@ -12,32 +12,32 @@
     <section class="fondo">
         <form class="Registro" id="formulario">
             <div class="campo1">
-                <label for="nombres"><i class="fas fa-user" id="nombres"></i> Nombres</label>
-                <input class="input_nombres" placeholder="Nombres" id="Nombres" type="text">
+                <label class="nombres" for="nombres"><i class="fas fa-user" id="user_icon"></i> Nombres</label>
+                <input class="input_nombres" placeholder="Nombres" id="nombres" type="text">
             </div>
             <div class="campo2">
-                <label for="apellidos"><i class="fas fa-user" id="apellidos"></i> Apellidos</label>
-                <input class="input_apellidos" placeholder="Apellidos" id="Apellidos" type="text">
+                <label class="apellidos" for="apellidos"><i class="fas fa-user" id="user_icon"></i> Apellidos</label>
+                <input class="input_apellidos" placeholder="Apellidos" id="apellidos" type="text">
             </div>
             <div class="campo3">
-                <label for="correo"><i class="fas fa-envelope" id="correo"></i> Correo</label>
-                <input class="input_correo" placeholder="Correo" id="Correo" type="email">
+                <label class="correo" for="correo"><i class="fas fa-envelope" id="correo_icon"></i> Correo</label>
+                <input class="input_correo" placeholder="Correo" id="correo" type="email">
             </div>
             <div class="campo4">
-                <label for="contraseña"><i class="fas fa-lock" id="contraseña"></i> Contraseña</label>
-                <input class="input_contraseña" placeholder="Contraseña" id="Contraseña" type="password">
+                <label class="contraseña" for="contraseña"><i class="fas fa-lock" id="contraseña_icon"></i> Contraseña</label>
+                <input class="input_contraseña" placeholder="Contraseña" id="contraseña" type="password">
             </div>
-            <button class="btn_registro" onclick="validar()" type="button">Registrar</button>
+            <button class="btn_registro" onclick="validar()" type="button"><h1>Registrar</h1></button>
         </form>
         <div id="popup" class="popup">
-            <i class="fas fa-exclamation-triangle" id="alerta-icono"></i>
-            <p>Se ha detectado un error, verifica y vuelve a digitar por favor.</p>
-            <button onclick="cerrarVentana()">Aceptar</button>
+            <i class="fas fa-exclamation-triangle" id="alerta-icono" ></i>
+            <p>Se ha detectado un error, verifica y vuelve a digitar por favor .</p>
+            <button onclick="cerrarVentana()"><h1>Aceptar</h1></button>
         </div>
         <div id="reg_ex" class="reg_ex">
-            <i class="fas fa-check-circle"></i>
-            <p>Registro Exitoso.</p>
-            <button onclick="cerrarReg_ex()">Aceptar</button>
+            <i class="fas fa-exclamation-triangle" id="alerta-icono" ></i>
+            <p>Registro Exitoso .</p>
+            <button onclick="cerrarReg_ex()"><h1>Aceptar</h1></button>
         </div>
     </section>
 
