@@ -54,11 +54,10 @@ body{
     border-radius: 4px;
     font-size: 16px;
     color: #000000;
-    
 }
 
 .input_nombres:hover, .input_apellidos:hover, .input_correo:hover, .input_contraseña:hover{
-    background-color:rgb(211, 211, 211);
+    background-color:rgb(221, 220, 220);
 }
 .btn_registro{
     background-color: #007BFF;
@@ -104,7 +103,7 @@ body{
     z-index: 2;
 }
 .popup button, .reg_ex button {
-    background-color: #007BFF;
+    background-color: #c10000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -114,10 +113,10 @@ body{
     text-align: center;
 }
 .popup button:hover {
-    background-color: rgb(62, 173, 173);
+    background-color: #8d0606;
 }
 .reg_ex button:hover {
-    background-color: rgb(62, 173, 173);
+    background-color: #8d0606;
 }
 
 @keyframes blink{
@@ -149,6 +148,14 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: px;
 }
-#ombres, #apellidos, #correo, #contraseña{
-    color: #ffffff;
+#nombres, #apellidos, #correo, #contraseña{
+    color: #000000;
+}
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+#user_icon,#correo_icon, #contraseña_icon{
+    color: #fffdfd;
 }
