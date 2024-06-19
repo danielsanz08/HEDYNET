@@ -1,4 +1,4 @@
-egistro.js
+
 
 /*function validar() {
     var nombres = document.getElementById("nombres").value;
