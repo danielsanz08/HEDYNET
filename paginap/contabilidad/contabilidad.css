@@ -1,0 +1,215 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.section-dark {
+    background-color: #f0f0f0;
+}
+
+.balance-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.balance-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.balance-item:hover {
+    transform: translateY(-5px);
+}
+
+.balance-item h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #007bff;
+}
+
+.balance-item p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.transaction-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.transaction-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.transaction-item:hover {
+    transform: translateY(-5px);
+}
+
+.transaction-item h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #007bff;
+}
+
+.transaction-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.report-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.report-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+}
+
+.report-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #007bff;
+}
+
+.report-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.adjustments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.adjustment-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.adjustment-item:hover {
+    transform: translateY(-5px);
+}
+
+.adjustment-item h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #007bff;
+}
+
+.adjustment-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .balance-info, .transaction-list, .report-cards, .adjustments {
+        grid-template-columns: 1fr;
+    }
+}

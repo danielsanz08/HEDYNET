@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido, {{ nombre_usuario }}</h1>
+    </header>
+
+    <div class="container">
+        <section class="user-info">
+            <h2>Información del Usuario</h2>
+            <div class="info-item">
+                <strong>Nombre:</strong> <span>{{ nombre_usuario }}</span>
+            </div>
+            <div class="info-item">
+                <strong>Email:</strong> <span>{{ email_usuario }}</span>
+            </div>
+            <div class="info-item">
+                <strong>Rol:</strong> <span>{{ rol_usuario }}</span>
+            </div>
+        </section>
+
+        <section class="user-actions">
+            <h2>Acciones Disponibles</h2>
+            <ul>
+                <li><a href="#">Ver Perfil</a></li>
+                <li><a href="#">Editar Perfil</a></li>
+                <li><a href="#">Cambiar Contraseña</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="usuario.js"></script>
+</body>
+</html>
+

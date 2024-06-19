@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="imagenes/logo_hedynet.png" type="image/x-icon">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section class="fondo">
+        <form class="Registro" id="formulario">
+            <div class="campo1">
+                <label for="nombres"><i class="fas fa-user" id="nombres"></i> Nombres</label>
+                <input class="input_nombres" placeholder="Nombres" id="Nombres" type="text">
+            </div>
+            <div class="campo2">
+                <label for="apellidos"><i class="fas fa-user" id="apellidos"></i> Apellidos</label>
+                <input class="input_apellidos" placeholder="Apellidos" id="Apellidos" type="text">
+            </div>
+            <div class="campo3">
+                <label for="correo"><i class="fas fa-envelope" id="correo"></i> Correo</label>
+                <input class="input_correo" placeholder="Correo" id="Correo" type="email">
+            </div>
+            <div class="campo4">
+                <label for="contraseña"><i class="fas fa-lock" id="contraseña"></i> Contraseña</label>
+                <input class="input_contraseña" placeholder="Contraseña" id="Contraseña" type="password">
+            </div>
+            <button class="btn_registro" onclick="validar()" type="button">Registrar</button>
+        </form>
+        <div id="popup" class="popup">
+            <i class="fas fa-exclamation-triangle" id="alerta-icono"></i>
+            <p>Se ha detectado un error, verifica y vuelve a digitar por favor.</p>
+            <button onclick="cerrarVentana()">Aceptar</button>
+        </div>
+        <div id="reg_ex" class="reg_ex">
+            <i class="fas fa-check-circle"></i>
+            <p>Registro Exitoso.</p>
+            <button onclick="cerrarReg_ex()">Aceptar</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="atras">
+            <a href="login.html"><img src="https://img.icons8.com/?size=80&id=115839&format=png" width="50px" alt="Volver"></a>
+        </div>
+    </section>
+    <script src="registro.js"></script>
+</body>
+</html>
