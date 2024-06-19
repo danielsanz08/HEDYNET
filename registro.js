@@ -1,5 +1,4 @@
 
-
 /*function validar() {
     var nombres = document.getElementById("nombres").value;
     var apellidos = document.getElementById("apellidos").value;
@@ -35,49 +34,51 @@ function Registrar() {
     }
 
 } */
-    function validar(){
-        var nombres = document.getElementById("nombres").value;
-        var apellidos = document.getElementById("apellidos").value;
-        var correo = document.getElementById("correo").value;
-        var contraseña = document.getElementById("contraseña").value;
-        var val_string = /^[a-zA-Z\s]+$/;
-        var val_correo = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-        var val_contraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/;
+function validar() {
+    var nombres = document.getElementById("nombres").value;
+    var apellidos = document.getElementById("apellidos").value;
+    var correo = document.getElementById("correo").value;
+    var contraseña = document.getElementById("contraseña").value;
+    var val_string = /^[a-zA-Z\s]+$/;
+    var val_correo = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    var val_contraseña = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/;
 
-        if (nombres === "" || apellidos === "" || correo === "" || contraseña === "") {
-            mostrarPopup();
-            return false;
-        }else if (!val_string.test(nombres) ||!val_string.test(apellidos)){
-            mostrarPopup();
-            return false;
-        }else if(!val_correo.test(correo)){
-            mostrarPopup();
-            return false;
-        }else if(!val_contraseña.test(contraseña) && contraseña.length < 12 ){
-            mostrarPopup();
-            return false;
-        }else{
-            mostrarREg_Ex();
-            
-            return true;
-            
-            }
-    }
-
-    function mostrarPopup(){
-        document.getElementById("popup").style.display = 'block';
-    }
-    //funcion para cerrar la ventana
-    function cerrarVentana(){
-        document.getElementById("popup").style.display = 'none';
-    }
-    function mostrarREg_Ex(){
-        document.getElementById("reg_ex").style.display = 'block';
-
-    }
-    function cerrarReg_ex(){
-        document.getElementById("reg_ex").style.display = 'none';
-    }
-    function paginap(){
+    if (nombres === "" || apellidos === "" || correo === "" || contraseña === "") {
+        mostrarPopup();
+        return false;
+    } else if (!val_string.test(nombres) || !val_string.test(apellidos)) {
+        mostrarPopup();
+        return false;
+    } else if (!val_correo.test(correo)) {
+        mostrarPopup();
+        return false;
+    } else if (!val_contraseña.test(contraseña) && contraseña.length < 12) {
+        mostrarPopup();
+        return false;
+    } else {
+        mostrarREg_Ex();
         window.location.href = "paginap/paginaP.html"
+        return true;
+
     }
+}
+
+function mostrarPopup() {
+    document.getElementById("popup").style.display = 'block';
+}
+//funcion para cerrar la ventana
+function cerrarVentana() {
+    document.getElementById("popup").style.display = 'none';
+}
+function mostrarREg_Ex() {
+    document.getElementById("reg_ex").style.display = 'block';
+
+
+}
+function cerrarReg_ex() {
+    document.getElementById("reg_ex").style.display = 'none';
+}
+function paginap() {
+    window.location.href = "paginap/paginaP.html"
+}
+/*f */
