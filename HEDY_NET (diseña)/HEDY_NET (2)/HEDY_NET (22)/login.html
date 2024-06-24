@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="HEDY_NET/HEDY_NET/imagenes/logo.png"  type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<section class="fondo">
+    <div class="logo">
+        <img src="imagenes/logo_hedybed-sf.png">
+    </div>
+    <div class="container">
+        <div class="formulario">
+            <h1>Bienvenido</h1>
+
+            <form action="paginaP.html">
+                <div class="campo1">
+                    <input class="input_email" type="email" placeholder=" " id="email">
+                    <label class="campo_Email" for="email">E-mail</label>
+                </div>
+                <br>
+
+                <div class="campo2">
+                    <input class="input_password" type="password" placeholder=" " id="contraseña">
+                    <label class="campo_contraseña" for="contraseña">Contraseña</label>
+                </div>
+                <br>
+
+                <button class="btn_inicio" onclick="ingresar()" type="button">Ingresar</button>
+
+                <div id="alert" class="alert">
+                    <h2>ALERTA</h2>
+                    <p>Se ha detectado un error, verifica y vuelve a digitar por favor.</p>
+                    <button class="button" onclick="cerrarVentana()">Aceptar</button>
+                </div>
+            </form>
+            <br>
+            <a href="registro.html">Crear una cuenta</a><br>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+    </div>
+</section>
+<script src="login.js"></script>
+</body>
+</html>

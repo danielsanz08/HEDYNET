@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad de Inventario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="contabilidad.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><i class="fas fa-calculator"></i> Contabilidad</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#balance">Balance</a></li>
+                <li><a href="#transacciones">Transacciones</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+                <li><a href="#registros-recientes">Registros Recientes</a></li>
+                <li><a href="#registro-por-fecha">Registro por Fecha</a></li>
+                <li><a href="#ajustes">Ajustes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="balance" class="section">
+            <h2>Balance General</h2>
+            <div class="balance-info">
+                <div class="balance-item">
+                    <h3>Total de Activos</h3>
+                    <p class="amount">$1,200,000 COP</p>
+                </div>
+                <div class="balance-item">
+                    <h3>Total de Pasivos</h3>
+                    <p class="amount">$800,000 COP</p>
+                </div>
+                <div class="balance-item">
+                    <h3>Patrimonio Neto</h3>
+                    <p class="amount">$400,000 COP</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="transacciones" class="section">
+            <h2>Registro de Transacciones</h2>
+            <div class="transaction-types">
+                <h3>Ver Transacciones por Tipo</h3>
+                <div class="type-buttons">
+                    <button class="type-btn" data-type="compras">Compras</button>
+                    <button class="type-btn" data-type="ventas">Ventas</button>
+                    <button class="type-btn" data-type="gastos">Gastos</button>
+                    <button class="type-btn" data-type="ingresos">Ingresos</button>
+                </div>
+            </div>
+
+            <div class="transaction-table">
+                <table id="transaction-table">
+                    <thead>
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Monto</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filas de transacciones se cargarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <form id="transaction-form">
+                <h3>Registrar Nueva Transacción</h3>
+                <div class="form-group">
+                    <label for="tipo">Tipo de Transacción</label>
+                    <select id="tipo" name="tipo">
+                        <option value="compra">Compra</option>
+                        <option value="venta">Venta</option>
+                        <option value="gasto">Gasto</option>
+                        <option value="ingreso">Ingreso</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion" name="descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="monto">Monto ($ COP)</label>
+                    <input type="number" id="monto" name="monto" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <button type="submit" class="btn">Registrar Transacción</button>
+            </form>
+        </section>
+
+        <section id="reportes" class="section">
+            <h2>Reportes Mensuales</h2>
+            <div class="report-cards">
+                <div class="report-card">
+                    <h3>Mayo 2024</h3>
+                    <p><i class="fas fa-file-alt"></i> <a href="#">Ver Reporte Completo</a></p>
+                </div>
+                <div class="report-card">
+                    <h3>Abril 2024</h3>
+                    <p><i class="fas fa-file-alt"></i> <a href="#">Ver Reporte Completo</a></p>
+                </div>
+                <div class="report-card">
+                    <h3>Marzo 2024</h3>
+                    <p><i class="fas fa-file-alt"></i> <a href="#">Ver Reporte Completo</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registros-recientes" class="section">
+            <h2>Registros Recientes</h2>
+            <div class="recent-records">
+                <div class="record-item">
+                    <p><i class="fas fa-dollar-sign"></i> Se registró una venta por $10,000 COP.</p>
+                    <p>Fecha: 15 de junio de 2024</p>
+                </div>
+                <div class="record-item">
+                    <p><i class="fas fa-money-bill-alt"></i> Se registró un gasto por $500 COP en suministros.</p>
+                    <p>Fecha: 14 de junio de 2024</p>
+                </div>
+                <div class="record-item">
+                    <p><i class="fas fa-cart-plus"></i> Se registró una compra de insumos por $2,000 COP.</p>
+                    <p>Fecha: 13 de junio de 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registro-por-fecha" class="section">
+            <h2>Registro de Transacciones por Fecha</h2>
+            <div class="date-filter">
+                <label for="date-select">Seleccionar fecha:</label>
+                <input type="date" id="date-select">
+            </div>
+            <div class="transactions-by-date">
+                <!-- Transacciones por fecha se cargarán dinámicamente -->
+            </div>
+        </section>
+
+        <section id="ajustes" class="section">
+            <h2>Ajustes Contables</h2>
+            <div class="adjustments">
+                <div class="adjustment-item">
+                    <h3>Ajuste de Inventarios</h3>
+                    <p><i class="fas fa-exclamation-triangle"></i> Se debe ajustar el inventario por diferencias encontradas.</p>
+                </div>
+                <div class="adjustment-item">
+                    <h3>Depreciación de Activos</h3>
+                    <p><i class="fas fa-exclamation-triangle">

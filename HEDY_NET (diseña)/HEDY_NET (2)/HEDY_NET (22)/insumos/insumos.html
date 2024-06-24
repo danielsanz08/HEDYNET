@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Insumos</title>
+    <link rel="stylesheet" href="insumos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gestión de Insumos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#agregar">Agregar Insumo</a></li>
+                    <li><a href="#modificar">Modificar Insumo</a></li>
+                    <li><a href="#consultar">Consultar Insumos</a></li>
+                    <li><a href="#informes">Informes de Insumos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="agregar" class="section">
+        <div class="container">
+            <h2>Agregar Nuevo Insumo</h2>
+            <form id="add-insumo-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" required>
+                </div>
+                <button type="submit"><span>Agregar Insumo</span></button>
+            </form>
+        </div>
+    </section>
+
+    <section id="modificar" class="section section-dark">
+        <div class="container">
+            <h2>Modificar Insumo</h2>
+            <form id="update-insumo-form">
+                <div class="form-group">
+                    <label for="select-insumo">Seleccionar Insumo</label>
+                    <select id="select-insumo" name="select-insumo">
+                        <option value="1">Insumo 1</option>
+                        <option value="2">Insumo 2</option>
+                        <option value="3">Insumo 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="new-cantidad">Nueva Cantidad</label>
+                    <input type="number" id="new-cantidad" name="new-cantidad" required>
+                </div>
+                <button type="submit"><span>Modificar Insumo</span></button>
+            </form>
+        </div>
+    </section>
+
+    <section id="consultar" class="section">
+        <div class="container">
+            <h2>Consultar Insumos</h2>
+            <div class="insumo-list">
+                <div class="insumo-item">
+                    <h3>Insumo 1</h3>
+                    <p>Descripción: Lorem ipsum dolor sit amet.</p>
+                    <p>Cantidad: 100</p>
+                </div>
+                <div class="insumo-item">
+                    <h3>Insumo 2</h3>
+                    <p>Descripción: Consectetur adipiscing elit.</p>
+                    <p>Cantidad: 50</p>
+                </div>
+                <div class="insumo-item">
+                    <h3>Insumo 3</h3>
+                    <p>Descripción: Sed do eiusmod tempor incididunt.</p>
+                    <p>Cantidad: 200</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="informes" class="section section-dark">
+        <div class="container">
+            <h2>Informes de Insumos</h2>
+            <div class="report-cards">
+                <div class="report-card">
+                    <h3>Informe de Existencias</h3>
+                    <p><i class="fas fa-file-alt"></i> <a href="#">Ver Informe Completo</a></p>
+                </div>
+                <div class="report-card">
+                    <h3>Informe de Movimientos</h3>
+                    <p><i class="fas fa-file-alt"></i> <a href="#">Ver Informe Completo</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 hedybed. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="insumos.js"></script>
+</body>
+</html>
